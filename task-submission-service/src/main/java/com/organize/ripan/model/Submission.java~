@@ -1,0 +1,4 @@
+package com.organize.ripan.model;
+
+public class Submission {
+}
