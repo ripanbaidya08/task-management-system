@@ -7,7 +7,6 @@ import com.organize.ripan.model.UserDto;
 import com.organize.ripan.service.SubmissionService;
 import com.organize.ripan.service.TaskService;
 import com.organize.ripan.service.UserService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
