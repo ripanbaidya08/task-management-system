@@ -9,6 +9,11 @@
         <option value="$PROJECT_DIR$/task-submission-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/services/spring-cloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/services/spring-cloud-api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/services/task-service/pom.xml" />
+        <option value="$PROJECT_DIR$/services/task-submission-service/pom.xml" />
+        <option value="$PROJECT_DIR$/services/task-user-service/pom.xml" />
       </list>
     </option>
   </component>

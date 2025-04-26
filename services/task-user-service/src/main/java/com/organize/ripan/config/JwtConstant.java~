@@ -1,0 +1,4 @@
+package com.organize.ripan.config;
+
+public class JwtConstant {
+}
