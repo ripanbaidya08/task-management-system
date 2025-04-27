@@ -1,0 +1,72 @@
+.card {
+    background-color: #0c071b;
+    box-shadow: rgba(215, 106, 255, 0.507) 0px 0px 20px;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+    width: 280px; /* FIXED width to prevent resizing issues */
+}
+
+.menuItem,
+.activeMenuItem {
+    width: 100%; /* Menu items take full width */
+    text-align: center;
+    padding: 0.75rem 1rem; /* balanced padding */
+    border-radius: 9999px; /* fully rounded */
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease; /* smooth hover effect */
+}
+
+.menuItem {
+    border: 2px solid #c24dd0;
+    color: white;
+    background-color: transparent;
+}
+
+.menuItem:hover {
+    background-color: #1a103d; /* subtle hover effect */
+}
+
+.activeMenuItem {
+    background-image: linear-gradient(150deg, #c24dd0, #7172fa);
+    color: white;
+}
+
+.logoutButton {
+    color: white !important;
+    background-image: linear-gradient(150deg, #c24dd0, #ff005d);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 9999px !important;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+    opacity: 0.9;
+}
+
+.customButton {
+    color: white !important;
+    background-image: linear-gradient(150deg, #c24dd0, #7172fa);
+    border-radius: 9999px !important;
+}
+/* adding slight hover effect on active item*/
+.activeMenuItem:hover {
+    opacity: 0.95;
+}
+
+/* adjust screen*/
+@media (max-width: 768px) {
+    .card {
+        width: 220px;
+        padding: 2rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 180px;
+        padding: 1rem 0.5rem;
+    }
+}
