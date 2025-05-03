@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import {ListItem, Avatar, ListItemAvatar, ListItemText, Divider} from "@mui/material";
 
 const style = {
     position: 'absolute',
@@ -13,9 +14,11 @@ const style = {
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
+    p: 2,
+    outline: 'none'
 };
 
+const tasks = [1, 1, 1, 1];
 export default function UserList({handleClose, open}) {
 
     return (
@@ -27,9 +30,28 @@ export default function UserList({handleClose, open}) {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <Typography id="modal-modal-title" variant="h6" component="h2">
-                        User List
-                    </Typography>
+                    {
+                        tasks.map((item, index) =>
+                            <>
+                                <div className='flex items-center justify-between w-full'>
+                                    <div>
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <Avatar src='/images/nav-bar-demo-profile-image.jpeg' />
+                                            </ListItemAvatar>
+                                            <ListItemText secondary="Ripan Baidya" primary={"Ripan Baidya"}/>
+                                        </ListItem>
+                                    </div>
+                                    <div>
+                                        <Button className='customButton'>Assigned</Button>
+                                    </div>
+                                </div>
+
+                                {/* for last item will not add divider */}
+                                {index !== tasks.length-1 && <Divider variant="inset"/>}
+                            </>
+                            )
+                    }
                 </Box>
             </Modal>
         </div>

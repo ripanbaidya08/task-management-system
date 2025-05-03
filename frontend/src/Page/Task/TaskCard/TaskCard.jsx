@@ -3,7 +3,7 @@ import {IconButton, MenuItem, Menu} from "@mui/material";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import UserList from "./UserList";
 import SubmissionList from "./SubmissionList";
-import EditTaskForm from "./EditTaskCard";
+import EditTaskForm from "./EditTaskForm";
 
 const role = "ROLE_ADMIN";
 

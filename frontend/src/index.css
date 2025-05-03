@@ -24,6 +24,11 @@ code {
   width: 280px; /* FIXED width to prevent resizing issues */
 }
 
+.customButton {
+  color: white !important;
+  background-image: linear-gradient(150deg, #c24dd0, #7172fa);
+  border-radius: 9999px !important;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
